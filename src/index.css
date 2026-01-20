@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom Scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  @apply fixed top-0 left-0 w-8 h-8 rounded-full border-2 border-white pointer-events-none z-50 transition-transform duration-100 ease-out flex items-center justify-center mix-blend-difference;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor.hovered {
+  @apply scale-150 bg-white/20 border-transparent;
+}
