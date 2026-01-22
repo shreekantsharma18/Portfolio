@@ -23,8 +23,8 @@ const ContactForm = () => {
         // SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY
         emailjs
             .send(
-                'service_xxxxxxx', // REPLACE WITH YOUR SERVICE ID
-                'template_xxxxxxx', // REPLACE WITH YOUR TEMPLATE ID
+                'service_kp2kmwj', // REPLACE WITH YOUR SERVICE ID
+                'template_ruyfeza', // REPLACE WITH YOUR TEMPLATE ID
                 {
                     from_name: form.name,
                     to_name: 'Shreekant Sharma',
@@ -32,7 +32,7 @@ const ContactForm = () => {
                     to_email: 'shreekantsharma18@gmail.com', // Explicitly setting this if needed by template, but usually template handles it
                     message: form.message,
                 },
-                'public_key_xxxxxxx' // REPLACE WITH YOUR PUBLIC KEY
+                '4h2MhxwGGz3Owtd2B' // REPLACE WITH YOUR PUBLIC KEY
             )
             .then(
                 () => {
